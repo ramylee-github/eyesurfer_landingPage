@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.978" height="38.667" viewBox="0 0 30.978 38.667">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:#444}
+        </style>
+    </defs>
+    <g id="icon3" transform="translate(-74.43 -628.86)">
+        <path id="패스_5984" data-name="패스 5984" class="cls-1" d="M100.1 640.527v-5.667a5 5 0 0 0-5-5H80.43a5 5 0 0 0-5 5v26.667a5 5 0 0 0 5 5H95.1a5 5 0 0 0 5-5v-7.833"/>
+        <path id="선_78" data-name="선 78" class="cls-1" transform="translate(85.763 634.527)" d="M0 0h4"/>
+        <path id="패스_5985" data-name="패스 5985" d="M101.757 640.671H89.463a2.652 2.652 0 0 0-2.652 2.652v7.72a2.651 2.651 0 0 0 2.652 2.651h4.054l2.093 2.816 2.092-2.816h4.055a2.65 2.65 0 0 0 2.651-2.651v-7.72a2.651 2.651 0 0 0-2.651-2.652z" style="stroke:#205cd6;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+    </g>
+</svg>

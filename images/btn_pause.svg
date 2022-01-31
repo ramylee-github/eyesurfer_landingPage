@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="btn_play" transform="translate(-953 -2009)">
+        <circle id="타원_100" data-name="타원 100" cx="30" cy="30" r="30" transform="translate(953 2009)" style="fill:#205cd6"/>
+        <path id="사각형_1029" data-name="사각형 1029" class="cls-2" transform="translate(976 2030)" d="M0 0h4v18H0z"/>
+        <path id="사각형_1030" data-name="사각형 1030" class="cls-2" transform="translate(986 2030)" d="M0 0h4v18H0z"/>
+    </g>
+</svg>

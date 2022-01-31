@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="164" viewBox="0 0 50 164">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-5, .cls-6 {
+        fill: #333;
+      }
+
+      .cls-2 {
+        font-size: 18px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #eee;
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #333;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="contact_open" transform="translate(0 -341)">
+    <path id="사각형_986" data-name="사각형 986" class="cls-1" d="M15,0H50a0,0,0,0,1,0,0V164a0,0,0,0,1,0,0H15A15,15,0,0,1,0,149V15A15,15,0,0,1,15,0Z" transform="translate(0 341)"/>
+    <text id="contact" class="cls-2" transform="translate(20 361) rotate(90)"><tspan x="0" y="0">Contact</tspan></text>
+    <g id="icon_open" transform="translate(61.285 503.629) rotate(180)">
+      <rect id="사각형_988" data-name="사각형 988" class="cls-3" width="26" height="26" transform="translate(23.285 18.629)"/>
+      <line id="선_17" data-name="선 17" class="cls-4" y1="3.663" x2="4.198" transform="translate(32.185 31.148)"/>
+      <path id="패스_44" data-name="패스 44" class="cls-5" d="M1.079-.035,5.235,3.656" transform="translate(31.147 27.481)"/>
+      <rect id="사각형_987" data-name="사각형 987" class="cls-6" width="2" height="9" transform="translate(41.285 35.629) rotate(180)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="54.9" viewBox="0 0 20 54.9">
+    <defs>
+        <clipPath id="clip-path">
+            <path class="cls-1" d="M0 0h8.8v17.8H0z"/>
+        </clipPath>
+        <style>
+            .cls-1,.cls-6{fill:none}.cls-6{stroke:#fff;stroke-linecap:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="scrolldown" transform="translate(-949 -743)" style="opacity:.8">
+        <g id="그룹_152" data-name="그룹 152" transform="translate(-93 16)">
+            <g id="사각형_784" data-name="사각형 784" transform="translate(1042 727)" style="stroke-width:3px;stroke:#fff;fill:none">
+                <rect width="20" height="32" rx="10" style="stroke:none"/>
+                <rect class="cls-1" x="1.5" y="1.5" width="17" height="29" rx="8.5"/>
+            </g>
+            <rect id="사각형_785" data-name="사각형 785" width="3" height="8" rx="1.5" transform="translate(1050.5 733)" style="fill:#fff"/>
+            <g id="반복_그리드_49" data-name="반복 그리드 49" transform="translate(1048.1 764.1)" style="clip-path:url(#clip-path)">
+                <g id="그룹_6366" data-name="그룹 6366" transform="translate(-1046.1 -769.1)">
+                    <path id="선_81" data-name="선 81" class="cls-6" transform="translate(1047.5 770.5)" d="m0 0 3 4"/>
+                    <path id="선_82" data-name="선 82" class="cls-6" transform="translate(1050.5 770.5)" d="M3 0 0 4"/>
+                </g>
+                <g id="그룹_6366-2" data-name="그룹 6366" transform="translate(-1046.1 -759.1)">
+                    <path id="선_81-2" data-name="선 81" class="cls-6" transform="translate(1047.5 770.5)" d="m0 0 3 4"/>
+                    <path id="선_82-2" data-name="선 82" class="cls-6" transform="translate(1050.5 770.5)" d="M3 0 0 4"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

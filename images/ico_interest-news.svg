@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.048" height="37.5" viewBox="0 0 36.048 37.5">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.cls-1{stroke:#444}.cls-2{stroke:#205cd6}
+        </style>
+    </defs>
+    <g id="icon1" transform="translate(-183.658 -629.885)">
+        <g id="그룹_6318" data-name="그룹 6318">
+            <path id="패스_5981" data-name="패스 5981" class="cls-1" d="M193.134 658.846v2.424a5.057 5.057 0 0 1-4.75 5.038c.107.008.211.032.322.032h24.931a5.07 5.07 0 0 0 5.069-5.07v-2.424z"/>
+            <path id="패스_5982" data-name="패스 5982" class="cls-1" d="M213.509 658.846v-27.961h-28.851v31.4a4.037 4.037 0 0 0 3.726 4.018"/>
+            <path id="패스_5983" data-name="패스 5983" class="cls-1" d="M188.061 666.34h.645c-.111 0-.215-.024-.322-.032s-.212.032-.323.032z"/>
+        </g>
+        <path id="선_76" data-name="선 76" class="cls-2" transform="translate(192.263 640.027)" d="M0 0h4"/>
+        <path id="선_77" data-name="선 77" class="cls-2" transform="translate(192.263 646.527)" d="M0 0h12.5"/>
+    </g>
+</svg>

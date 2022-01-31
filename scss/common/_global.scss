@@ -1,0 +1,64 @@
+$global-full-size:100%;
+$global-white-color:#fff;
+$global-bg-position:0 0;
+$global-bg-repeat:no-repeat;
+$basic-transition:all .3s;
+// Breakpoints(랜딩페이지 전용 수치)
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-web: 1500px;
+
+@mixin positionR($num) {
+    position: relative;
+    z-index: $num;
+}
+@mixin positionA($num) {
+    position: absolute;
+    z-index: $num;
+}
+@mixin text-ellipsis($maxWidth) {
+    display: inline-block;
+    max-width:$maxWidth;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@mixin bgImg($global-bg-position) {
+    background-position: $global-bg-position;
+    background-repeat: $global-bg-repeat;
+}
+@mixin flexBox($flexflow, $hAlign, $vAlign) {
+    display:-ms-flexbox;
+    display: flex;
+    flex-flow: $flexflow;
+    justify-content: $hAlign;
+    align-items: $vAlign;
+}
+@mixin pseudoSelector($width, $height) {
+    content:' ';
+    display:inline-block;
+    vertical-align: middle;
+    width:$width;
+    height:$height;
+}
+@mixin clearfix {
+    display:block;
+    content: ' ';
+    clear: both;
+}
+@mixin mobile {
+    @media screen and (max-width: #{$breakpoint-mobile - 1}) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet}) {
+      @content;
+    }
+  }
+  @mixin web {
+    @media screen and (min-width: #{$breakpoint-tablet + 1}) and (max-width: #{$breakpoint-web}) {
+      @content;
+    }
+  }

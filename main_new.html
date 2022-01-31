@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyesurfer</title>
+
+    <link rel="stylesheet" href="css/lib/fullpage.css">
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="skip-nav">
+        <a href="#surferIntroduce">아이서퍼 소개 바로가기</a>
+        <a href="#surferFeatures">아이서퍼 특징 바로가기</a>
+        <a href="#surferServices">아이서퍼 서비스 종류 소개 바로가기</a>
+        <a href="#surferCustomerComment">아이서퍼 사용 고객사 후기 바로가기</a>
+        <a href="#surferCustomer">아이서퍼 고객사 리스트 바로가기</a>
+    </div>
+    <header class="surfer-header">
+        <h1>
+            <img src="images/logo_eyesurfer.svg" alt="Eyesurfer" />
+        </h1>
+    </header>
+    <div id="mainContainer">
+            <section class="section surfer-section1">
+                <div class="swiper key-visual-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/key_visual1.jpg" alt="">
+                            <div class="intro-msg-area">
+                                <p>하루에 나오는 기사만 15만개, 필요한 기사를 빠르고 정확하게 스크랩하고 싶다면...</p>
+                                <p class="key-msg key-msg-big">
+                                    뉴스 스크랩 서비스<strong class="emp">아이서퍼</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/key_visual2.jpg" alt="">
+                            <div class="intro-msg-area">
+                                <p class="key-msg">
+                                    1,500개 이상의 <strong>고객사</strong><br />
+                                    2,600군데 이상의 언론매체 <strong>수집</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key-visual-pagination-area">
+                        <div class="swiper-pagination key-visual-pagination-num"></div>
+                        <div class="swiper-pagination key-visual-pagination"></div>
+                    </div>
+                </div>
+                <div class="surfer-conts">
+                    <div class="btn-area">
+                        <button class="btn btn-video-play" id="controlKeyVideoPlay"></button>
+                        <button class="btn btn-show-k-visual" id="showVideo">Key Visual</button>
+                        <span class="scroll-indigator"></span>
+                    </div>
+                </div>
+                <div class="btm-surfer-conts">
+                    <div class="intro-area">
+                        <a href="javscript:;" class="intro-msg">아이서퍼 소개서 다운받기</a>
+                    </div>
+                    <div class="search-area">
+                        <img src="images/logo_wigo_w.svg" alt="wigo mon">
+                        <p class="search-msg">실시간 검색 체험하기</p>
+                        <div class="search-input">
+                            <input type="text" placeholder="궁금한 이슈를 검색해 보세요." />
+                            <a href="javascript:;" class="search-icon">검색</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section surfer-section2" id="surferIntroduce">
+                <div class="surfer-conts">
+                    <div class="title-area">
+                        <h2 class="tit">Introduce</h2>
+                        <p class="tit sub-tit">국내 최대 빅데이터 기반 스크랩 & 모니터링 서비스</p>
+                    </div>
+                    <ul class="number-area">
+                      <li class="n-collected-article">
+                          <dl>
+                              <dt>수집기사</dt>
+                              <dd>
+                                <strong class="s-tit today">TODAY</strong>
+                                <span class="num"></span>
+                            </dd>
+                          </dl>
+                      </li>  
+                      <li class="n-our-customer">
+                          <dl>
+                              <dt>이용고객</dt>
+                              <dd>
+                                <span class="num"></span>
+                            </dd>
+                          </dl>
+                      </li>  
+                      <li class="n-scraped-article">
+                          <dl>
+                              <dt>스크랩 기사</dt>
+                              <dd>
+                                <strong class="s-tit today">TODAY</strong>
+                                <span class="num"></span>
+                            </dd>
+                          </dl>
+                      </li>  
+                    </ul>
+                    <ul class="feature-area">
+                        <li class="f-interest-news">
+                            <dl>
+                                <dt>
+                                    <strong class="order-num">01</strong>
+                                    <strong class="s-tit">Interest News</strong>
+                                </dt>
+                                <dd>
+                                    <p class="summary-txt">원하는 뉴스만 찾아주는 관심뉴스</p>
+                                    <p class="main-txt">미리 설정한 키워드 기반 매체에서 관심있는 뉴스만 자동으로 검색 및 분류</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="f-scrap-report">
+                            <dl>
+                                <dt>
+                                    <strong class="order-num">02</strong>
+                                    <strong class="s-tit">Scrap Report</strong>
+                                </dt>
+                                <dd>
+                                    <p class="summary-txt">빠르고 편리한 스크랩보고서 제작</p>
+                                    <p class="main-txt">강력한 편집 기능으로 자유롭게 기사를 편집하여 전문가 수준의 보고서 작성</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="f-smart-notification">
+                            <dl>
+                                <dt>
+                                    <strong class="order-num">03</strong>
+                                    <strong class="s-tit">Smart Notification System</strong>
+                                </dt>
+                                <dd>
+                                    <p class="summary-txt">알아서 모니터링 하는 스마트알림</p>
+                                    <p class="main-txt">자리를 잠시 비우거나 다른 업무로 바빠도 똑똑한 아이서퍼 알리미 On!</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="f-statistical-analysis">
+                            <dl>
+                                <dt>
+                                    <strong class="order-num">04</strong>
+                                    <strong class="s-tit">Statistical Analysis</strong>
+                                </dt>
+                                <dd>
+                                    <p class="summary-txt">뉴스에 대한 다양한 통계 및 분석</p>
+                                    <p class="main-txt">스크랩 저장한 기사 기반의 다양한 통계와 분석정보 조회 및 보고서 출력/삽입 가능</p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section surfer-section3" id="surferFeatures">
+                <div class="surfer-conts">
+                    <div class="title-area">
+                        <h2 class="tit">Features</h2>
+                    </div>
+                    <div id="tabs1" data-idx="1">
+                        <ul class="tab">
+                            <li class="active" data-tit="firstTab1_1">
+                                <span class="tab-tit">관심뉴스</span>
+                            </li>
+                            <li data-tit="firstTab1_2">
+                                <span class="tab-tit">동일기사 그룹화</span>
+                            </li>
+                            <li data-tit="firstTab1_3">
+                                <span class="tab-tit">기사 자동배치</span>
+                            </li>
+                            <li data-tit="firstTab1_4">
+                                <span class="tab-tit">쉽고 빠른 내부공유</span>
+                            </li>
+                            <li data-tit="firstTab1_5">
+                                <span class="tab-tit">다양한 부가정보</span>
+                            </li>
+                            <li data-tit="firstTab1_6">
+                                <span class="tab-tit">분석 및 통계</span>
+                            </li>
+                        </ul>
+                        <div class="tab-cont" id="firstTab1_1">
+                            <div class="article-placement-area">
+                                <div class="video-wrapper" data-idx="1">
+                                    <div class="video-wrapper-inner">
+                                        <video 
+                                            src="video/feature_interestingNews.mp4"
+                                            loop="0" 
+                                            muted
+                                            playsinline
+                                            preload="auto"
+                                            poster="images/thumb_feature_i-news.jpg"
+                                        >
+                                            <source src="video/feature_interestingNews.mp4" type="video/mp4">
+                                        </video>
+                                        <button class="btn btn-video-play" id="controlSmallVideoPlay1"></button>
+                                    </div>
+                                </div>
+                                <div class="txt-wrapper">
+                                    <dl>
+                                        <dt>원하는 기사를 한 번의 클릭으로!</dt>
+                                        <dd>관심 키워드 설정으로  매번 반복하여 검색할 필요 없이 심 뉴스를 바로 찾아 스크랩 할 수 있습니다.</dd>
+                                    </dl>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="tab-cont" id="firstTab1_2">
+                            <div class="article-placement-area">
+                                <div class="video-wrapper" data-idx="2">
+                                    <div class="video-wrapper-inner">
+                                    <video 
+                                        src="video/feature_groupingArticles.mp4"
+                                        loop="0" 
+                                        muted
+                                        playsinline
+                                        preload="auto"
+                                        poster="images/thumb_feature_g-articles.jpg"
+                                    >
+                                        <source src="video/feature_groupingArticles.mp4" type="video/mp4">
+                                    </video>
+                                    <button class="btn btn-video-play" id="controlSmallVideoPlay2"></button>
+                                  </div>
+                                </div>
+                                <div class="txt-wrapper">
+                                    <dl>
+                                        <dt>같은 내용의 기사를 쉽고 빠르게!</dt>
+                                        <dd>내용이 유사한 기사를 묶어주는 묶음 기능으로 같은 내용의 기사를 쉽고 빠르게 스크랩 할 수 있습니다.</dd>
+                                    </dl>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="tab-cont" id="firstTab1_3">
+                            <div class="article-placement-area">
+                                <div class="video-wrapper" data-idx="3">
+                                    <div class="video-wrapper-inner">
+                                    <video 
+                                        src="video/feature_placeAutomatically.mp4"
+                                        loop="0" 
+                                        muted
+                                        playsinline
+                                        preload="auto"
+                                        poster="images/thumb_feature_p-auto.jpg"
+                                    >
+                                        <source src="video/feature_placeAutomatically.mp4" type="video/mp4">
+                                    </video>
+                                    <button class="btn btn-video-play" id="controlSmallVideoPlay3"></button>
+                                  </div>
+                                </div>
+                                <div class="txt-wrapper">
+                                    <dl>
+                                        <dt>최적의 배치로 스크랩 보고서를 자동으로!</dt>
+                                        <dd>스크랩 편집 시 기사 크기 등을 고려한 최적의 기사 배치로 스크랩 보고서를 자동 생성합니다.</dd>
+                                    </dl>
+                                    <button class="btn btn-download">스크랩파일 샘플 다운로드</button>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="tab-cont" id="firstTab1_4">
+                            <div class="article-placement-area">
+                                <div class="video-wrapper" data-idx="4">
+                                    <div class="video-wrapper-inner">
+                                    <video 
+                                        src="video/eyesurfer_introduction.mp4"
+                                        loop="0" 
+                                        muted
+                                        playsinline
+                                        preload="auto"
+                                        poster="images/thumb_feature1.jpg"
+                                    >
+                                        <source src="video/eyesurfer_introduction.mp4" type="video/mp4">
+                                    </video>
+                                    <button class="btn btn-video-play" id="controlSmallVideoPlay4"></button>
+                                  </div>
+                                </div>
+                                <div class="txt-wrapper">
+                                    <dl>
+                                        <dt>기사 공유도 쉽고 빠르게!</dt>
+                                        <dd>저장만으로도 스크랩한 기사를 직원에게 쉽고 빠르게 공유할 수 있습니다.</dd>
+                                    </dl>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="tab-cont" id="firstTab1_5">
+                            <div class="article-placement-area">
+                                <div class="video-wrapper" data-idx="5">
+                                    <div class="video-wrapper-inner">
+                                    <video 
+                                        src="video/eyesurfer_introduction.mp4"
+                                        loop="0" 
+                                        muted
+                                        playsinline
+                                        preload="auto"
+                                        poster="images/thumb_feature1.jpg"
+                                    >
+                                        <source src="video/eyesurfer_introduction.mp4" type="video/mp4">
+                                    </video>
+                                    <button class="btn btn-video-play" id="controlSmallVideoPlay5"></button>
+                                  </div>
+                                </div>
+                                <div class="txt-wrapper">
+                                    <dl>
+                                        <dt>기사에 대한 다양한 정보</dt>
+                                        <dd>포탈기사여부, 지면/온라인 여부, 논조, 보도자료 여부 등 다양한 정보를 조회할 수 있습니다.</dd>
+                                    </dl>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="tab-cont" id="firstTab1_6">
+                            <div class="article-placement-area">
+                                <div class="video-wrapper" data-idx="6">
+                                    <div class="video-wrapper-inner">
+                                    <video 
+                                        src="video/eyesurfer_introduction.mp4"
+                                        loop="0" 
+                                        muted
+                                        playsinline
+                                        preload="auto"
+                                        poster="images/thumb_feature1.jpg"
+                                    >
+                                        <source src="video/eyesurfer_introduction.mp4" type="video/mp4">
+                                    </video>
+                                    <button class="btn btn-video-play" id="controlSmallVideoPlay6"></button>
+                                  </div>
+                                </div>
+                                <div class="txt-wrapper">
+                                    <dl>
+                                        <dt>기사에 대한 다양한 통계와 분석</dt>
+                                        <dd>스크랩 저장한 기사를 기반으로 다양한 통계와 분석 정보를 조회하고 각종 보고서에 삽입할 수 있습니다.</dd>
+                                    </dl>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section surfer-section4" id="surferServices">
+                <div class="surfer-conts">
+                    <div class="title-area">
+                        <h2 class="tit">Our Service</h2>
+                    </div>
+                    <div id="tabs2" data-idx="2">
+                        <div id="secondTab1_1" class="tab-cont f-scrap active">
+                            <div class="s-feature-area">
+                                <dl class="s-feature-info">
+                                    <dt>
+                                        <strong class="q-num">Q1.</strong>
+                                        <strong class="s-tit">홍보 업무에 좀 더 집중하고 싶다면?</strong>
+                                    </dt>
+                                    <dd>
+                                        <p class="s-name">뉴스 스크랩은 스크랩 전문가에게</p>
+                                    </dd>
+                                    <dd>
+                                        <button class="btn btn-download">
+                                            스크랩대행 소개서 다운로드
+                                            <span class="arr-icon"></span>
+                                            <span class="btm-line"></span>
+                                        </button>
+                                    </dd>
+                                </dl>
+                                <div class="s-visual-area">
+                                    <dl>
+                                        <dt>스크랩 대행</dt>
+                                        <dd>
+                                            다양한 영역에서 10여 년 쌓은 스크랩 노하우
+                                            고객사 분석을 통한 100% 고객사 맞춤형 결과물
+                                        </dd>
+                                    </dl>
+                                    <img src="images/bg_s-feature_big1.jpg" class="bg-img" alt="">
+                                </div>
+                              </div>
+                        </div>
+                        <div id="secondTab1_2" class="tab-cont f-wigomon">
+                            <div class="s-feature-area">
+                                <dl class="s-feature-info">
+                                    <dt>
+                                        <strong class="q-num">Q2.</strong>
+                                        <strong class="s-tit">뉴스, 커뮤니티, sns 여론도 알고 싶다면?</strong>
+                                    </dt>
+                                    <dd>
+                                        <p class="s-name">미디어 모니터링 & 분석 서비스</p>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.wigomon.ai/" class="btn btn-download" target="_blank">위고몬 바로가기
+                                            <span class="arr-icon"></span>
+                                            <span class="btm-line"></span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <div class="s-visual-area">
+                                    <dl>
+                                        <dt>
+                                            <img src="images/logo_mon.svg" alt="WOGOMON">
+                                        </dt>
+                                        <dd>
+                                            다양한 채널의 이슈 실시간 모니터링
+                                            이슈흐름과 변화, 반응, 평판 등 인사이트 제공
+                                        </dd>
+                                    </dl>
+                                    <img src="images/bg_s-feature_big2.jpg" class="bg-img" alt="">
+                                </div>
+                              </div>
+                        </div>
+                        <div id="secondTab1_3" class="tab-cont f-wigocr">
+                            <div class="s-feature-area">
+                                <dl class="s-feature-info">
+                                    <dt>
+                                        <strong class="q-num">Q3.</strong>
+                                        <strong class="s-tit">매일 쏟아지는 여론 확실히 분석하고 싶다면?</strong>
+                                    </dt>
+                                    <dd>
+                                        <p class="s-name">전문가의 차별화된 분석 보고서</p>
+                                    </dd>
+                                    <dd>
+                                        <a href="files/WIGO_CR.pdf" class="btn btn-download" target="_blank" download>위고CR 소개서 다운로드
+                                            <span class="arr-icon"></span>
+                                            <span class="btm-line"></span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <div class="s-visual-area">
+                                    <dl>
+                                        <dt>
+                                            <img src="images/logo_cr_w.svg" alt="WOGOMON">
+                                        </dt>
+                                        <dd>
+                                            한 달 동안 언론에서 얼마나 언급했는지 궁금하다면?
+                                            언론에 배포한 보도자료의 성과가 궁금하다면?
+                                        </dd>
+                                    </dl>
+                                    <img src="images/bg_s-feature_big3.jpg" class="bg-img" alt="">
+                                </div>
+                              </div>
+                        </div>
+                        <div id="secondTab1_4" class="tab-cont f-rozeus">
+                            <div class="s-feature-area">
+                                <dl class="s-feature-info">
+                                    <dt>
+                                        <strong class="q-num">Q4.</strong>
+                                        <strong class="s-tit">네이버에서 볼 수 없는 뉴스도 확인하고 싶다면?</strong>
+                                    </dt>
+                                    <dd>
+                                        <p class="s-name">믿을 수 있는 뉴스앱 로제우스</p>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.rozeus.com/home" class="btn btn-download" target="_blank">로제우스 바로가기
+                                            <span class="arr-icon"></span>
+                                            <span class="btm-line"></span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <div class="s-visual-area">
+                                    <dl>
+                                        <dt>
+                                            <img src="images/logo_ro.svg" alt="WOGOMON">
+                                        </dt>
+                                        <dd>
+                                            2500개 이상의 미디어 파트너와 함께 하는 로제우스
+                                            작은 소식을 큰 이야기로- 나만의 뉴스룸
+                                        </dd>
+                                    </dl>
+                                    <img src="images/bg_s-feature_big4.jpg" class="bg-img" alt="">
+                                </div>
+                              </div>
+                        </div>
+                        <ul class="tab">
+                            <li data-tit="secondTab1_1" class="f-scrap active">
+                                <span class="tab-tit">스크랩 대행</span>
+                            </li>
+                            <li data-tit="secondTab1_2" class="f-wigomon">
+                                <span class="tab-tit">WIGO MON</span>
+                            </li>
+                            <li data-tit="secondTab1_3" class="f-wigocr">
+                                <span class="tab-tit">WIGO CR</span>
+                            </li>
+                            <li data-tit="secondTab1_4" class="f-rozeus">
+                                <span class="tab-tit">로제우스</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section surfer-section5" id="surferCustomerComment">
+                <div class="surfer-conts">
+                    <div class="title-area">
+                        <h2 class="tit">Customer Say</h2>
+                        <p class="tit sub-tit">한발 앞서 아이서퍼를 사용중인 고객사를 만나보세요</p>
+                    </div>
+                    <ul class="feedback-area">
+                        <li>
+                           <p class="summary-txt">빠짐 없이 스크랩할 수 있어요</p>
+                           <p class="main-txt">
+                            간단한 키워드 설정으로 우리 조직과 관련된 뉴스를
+                            빠짐없이 확인하고 스크랩 할 수 있어서 좋아요.
+                           </p>
+                           <span class="customer-info">춘천시청 시민소통담당관실 홍길동 주무관</span>
+                        </li>
+                        <li>
+                            <p class="summary-txt">스크랩 보고서 작성이 쉽고 빠릅니다</p>
+                            <p class="main-txt">
+                                아이서퍼를 통해 쉽게 보고서로 만들 수 있어 매일
+                                새벽 스크랩하는 시간이 줄어들었어요.
+                            </p>
+                            <span class="customer-info">홍성군청 홍보전산담당관실 이순신 주무관</span>
+                         </li>
+                         <li>
+                            <p class="summary-txt">편하게 기사를 공유할 수 있어요</p>
+                            <p class="main-txt">
+                                스크랩을 완성하고 저장만 하면 누구나 쉽게 기사를
+                                볼 수 있으니 따로 메일을 보내지 않아도 공유할 수
+                                있어 편리합니다.                                
+                            </p>
+                            <span class="customer-info">㈜더월드리더 홍보팀 강감찬 대리</span>
+                         </li>
+                         <li>
+                            <p class="summary-txt">기사 분석을 손쉽게 할 수 있네요</p>
+                            <p class="main-txt">
+                                아이서퍼의 통계/분석 기능으로 기사 분석을 쉽게
+                                할 수 있고 보고서에도 쉽게 넣을 수 있어서 편리
+                                하게 사용하고 있습니다.                                 
+                            </p>
+                            <span class="customer-info">강원도개발공사 인사총무팀 전우치님</span>
+                         </li>
+                         <li>
+                            <p class="summary-txt">빠짐 없이 스크랩할 수 있어요</p>
+                            <p class="main-txt">
+                             간단한 키워드 설정으로 우리 조직과 관련된 뉴스를
+                             빠짐없이 확인하고 스크랩 할 수 있어서 좋아요.
+                            </p>
+                            <span class="customer-info">춘천시청 시민소통담당관실 홍길동 주무관</span>
+                         </li>
+                         <li>
+                            <p class="summary-txt">스크랩 보고서 작성이 쉽고 빠릅니다</p>
+                            <p class="main-txt">
+                                아이서퍼를 통해 쉽게 보고서로 만들 수 있어 매일
+                                새벽 스크랩하는 시간이 줄어들었어요.
+                            </p>
+                            <span class="customer-info">홍성군청 홍보전산담당관실 이순신 주무관</span>
+                         </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section surfer-section6" id="surferCustomer">
+                <div class="surfer-conts">
+                    <div class="title-area">
+                        <h2 class="tit">Partners</h2>
+                        <p class="tit sub-tit">1500개 이상의 고객사가 아이서퍼의 솔루션을 선택했습니다</p>
+                    </div>
+                    <div class="swiper banner-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="banner-area">
+                                    <li><img src="images/partners/partners_logo1.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo2.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo3.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo4.png" alt=""></li>
+                                    <li><img src="images/partners/partners_logo5.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo6.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo7.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo8.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo9.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo10.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo11.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo12.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo13.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo14.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo15.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo16.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo17.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo18.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo19.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo20.svg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="banner-area">
+                                    <li><img src="images/partners/partners_logo21.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo22.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo23.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo24.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo25.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo26.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo27.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo28.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo29.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo30.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo31.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo32.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo33.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo34.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo35.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo36.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo37.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo38.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo39.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo40.svg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="banner-area">
+                                    <li><img src="images/partners/partners_logo41.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo42.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo43.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo44.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo45.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo46.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo47.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo48.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo49.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo50.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo51.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo52.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo53.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo54.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo55.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo56.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo57.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo58.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo59.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo60.svg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="banner-area">
+                                    <li><img src="images/partners/partners_logo61.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo62.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo63.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo64.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo65.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo66.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo67.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo68.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo69.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo70.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo71.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo72.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo73.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo74.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo75.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo76.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo77.svg" alt=""></li>
+                                    <li> <img src="images/partners/partners_logo78.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo79.svg" alt=""></li>
+                                    <li><img src="images/partners/partners_logo80.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        <footer class="section fp-auto-height surfer-footer">
+            <div class="footer-inner">
+                <div class="top-area">
+                    <span class="img"><img src="images/logo_eyesurfer_w.svg" alt="Eyesurfer"></span>
+                    <ul class="footer-info-list">
+                        <!-- [dev] 최신 회사 정보로 업데이트 필요 -->
+                        <li>회사명 : 비플라이소프트(주) / 대표 : 임경환 / 개인정보관리자 : 홍길동 본부장</li>
+                        <li>전화 : 02.3487.0215 / 팩스 : 02.3487.0216 / 주소 : 서울특별시 광진구 강변역로2 광진우체국 6F </li>
+                    </ul>
+                </div>
+                <div class="btm-area">
+                    <ul class="footer-btn-list">
+                        <li>
+                            <a href="javascript:;" class="btn">이메일무단수집거부</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn">쿠키정책</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn">제휴문의</a>
+                        </li>
+                    </ul>
+                    <small class="copyright-txt">Copyright © 2021 by Bflysoft corp. all rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <article class="contact-area">
+        <div class="contact-box">
+            <div class="c-header">
+                <span class="tit">문의하기</span>
+                <strong class="num">080.2580.450</strong>
+            </div>
+            <div class="c-body">
+                <div class="input-wrap">
+                    <input type="text" name="" id="" placeholder="이름">
+                    <input type="text" name="" id="" placeholder="연락처">
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="" id="" placeholder="이메일">
+                </div>
+                <div class="input-wrap">
+                   <textarea name="" id="" placeholder="문의하실 내용을 입력 해주세요."></textarea>
+                </div>
+                <div class="input-wrap flex-none">
+                    <input type="checkbox" name="" id="agree">
+                    <label for="agree">개인정보 수집 및 이용에 동의합니다.</label>
+                </div>
+                <p class="guide-msg">* 정보 수집에 동의하지 않는 경우 서비스 문의 및 제공이 불가능합니다.</p>
+                <button type="submit" class="btn btn-send">문의접수</button>
+            </div>
+        </div>
+        <button class="btn btn-contact"></button>
+    </article>
+    <div class="dimmed"></div>
+    <a href="#" class="btn-scroll-top">TOP</a>
+<script src="js/lib/jquery-3.6.0.min.js"></script>
+<script src="js/lib/fullpage.js"></script>
+<!-- <script src="js/lib/jquery.fullpage.min.js"></script> -->
+<script src="js/lib/swiper-bundle.min.js"></script>
+<script src="js/lib/anime.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+<script src="js/common_new.js"></script>
+<script>
+    init();
+
+</script>
+</body>
+</html>

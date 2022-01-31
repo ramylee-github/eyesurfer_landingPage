@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="164" viewBox="0 0 50 164">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #196bd8;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 18px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <g id="contact_closed" transform="translate(0 -341)">
+    <path id="사각형_986" data-name="사각형 986" class="cls-1" d="M15,0H50a0,0,0,0,1,0,0V164a0,0,0,0,1,0,0H15A15,15,0,0,1,0,149V15A15,15,0,0,1,15,0Z" transform="translate(0 341)"/>
+    <text id="close" class="cls-2" transform="translate(20 361) rotate(90)"><tspan x="0" y="0">Close</tspan></text>
+    <g id="icon_close" transform="translate(15 462)">
+      <rect id="사각형_935" data-name="사각형 935" class="cls-3" width="26" height="26" transform="translate(-3 -3)"/>
+      <path id="합치기_3" data-name="합치기 3" class="cls-4" d="M5.5,6.5,1,11,0,10,4.5,5.5,0,1,1,0,5.5,4.5,10,0l1,1L6.5,5.5,11,10l-1,1Z" transform="translate(5 5)"/>
+    </g>
+  </g>
+</svg>
