@@ -10,4 +10,4 @@ This works with on Chrome, Edge, Opera, Firefox browsers, except some old ones s
 And unforturnately, It can not be tested on Safari brower.
 
 ## License
-This is open source license under a license compatible with the [GNU GPL license v3].
+This is open source under a license compatible with the [GNU GPL license v3].
