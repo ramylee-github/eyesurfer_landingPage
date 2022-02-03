@@ -90,17 +90,6 @@ function init() {
                   }
                 
         },
-        afterLoad: function(index, item) {
-            // var activeSection = fullpage_api.getActiveSection();
-            // $(activeSection.item).addClass('focus');
-
-            // if('location.reload()' == true) {
-            //     $(activeSection.item).removeClass('focus');
-            //     history.replaceState({}, null, location.href + '#' + anchors);
-            //     fullpage_api.moveTo(1);
-            // }
-          
-        }
 });
 
     /*---------------------- 
@@ -439,7 +428,7 @@ function init() {
     function contactControl() {
         var contactBox = $(".contact-area");
         var contactBoxBtn = $(".contact-area .btn-contact");
-        var dimmedLayer = $(".dimmed");
+        var dimmedLayer = $(".dimmed-layer");
         
         contactBoxBtn.click(function () {
             if($(this).parent().hasClass("opened") === false) {

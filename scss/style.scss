@@ -1475,14 +1475,14 @@ input[type="checkbox"]:checked::before {
 }
 .contact-area {
   position: fixed;
-  right: -484px;
+  right: -480px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   transition: all 0.5s ease-in-out;
 
   .contact-box {
-    min-width: 480px;
+    width: 480px;
     min-height: 510px;
   }
   .c-header {
@@ -1530,6 +1530,7 @@ input[type="checkbox"]:checked::before {
 
       & > * {
         flex-basis: 47%;
+        min-width: 47%;
 
         &:only-child {
           flex-basis: 100%;
@@ -1603,7 +1604,7 @@ input[type="checkbox"]:checked::before {
     }
   }
 }
-.dimmed {
+.dimmed-layer {
   display: none;
   position: fixed;
   top: 0;
@@ -2263,7 +2264,7 @@ input[type="checkbox"]:checked::before {
     background-size: 100% auto;
   }
   .contact-area {
-    right: calc(100vw * (-484 / 1500));
+    right: calc(100vw * (-480 / 1500));
 
     .contact-box {
       min-width: calc(100vw * (480 / 1500));
